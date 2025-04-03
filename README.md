@@ -7,7 +7,7 @@ Home: https://github.com/skrub-data/skrub
 
 Package license: BSD-3-Clause
 
-Summary: Prepping tables for machine learning
+Summary: Machine learning for dataframes
 
 Development: https://github.com/skrub-data/skrub
 
