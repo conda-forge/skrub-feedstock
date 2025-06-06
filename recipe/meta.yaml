@@ -1,13 +1,13 @@
 {% set name = "skrub" %}
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/skrub-{{ version }}.tar.gz
-  sha256:  a0680a1d303d51378a13b5dfe9948e561f7a096a60ecfe3d73c3cfcf8cf6c1e4
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skrub-{{ version }}.tar.gz
+  sha256:  20785fc6c8b4524cf1f43bf11640627dfa59fa154092639778dee4fde1f46dba
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - wheel
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - scikit-learn >=1.2.1
     - numpy >=1.23.5
     - scipy >=1.9.3
@@ -37,6 +37,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
