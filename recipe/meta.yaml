@@ -1,5 +1,5 @@
 {% set name = "skrub" %}
-{% set version = "0.5.4" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skrub-{{ version }}.tar.gz
-  sha256:  20785fc6c8b4524cf1f43bf11640627dfa59fa154092639778dee4fde1f46dba
+  sha256: de522da987396df7ecc3f668c4b45420142d8d829c95bd315aefa86dfd9d62d0 
 
 build:
   noarch: python
@@ -26,10 +26,10 @@ requirements:
     - numpy >=1.23.5
     - scipy >=1.9.3
     - pandas >=1.5.3
-    - packaging >=23.1
     - jinja2 >=3.1.2
     - matplotlib-base >=3.4.3
     - requests >=2.25.0
+    - pydot
 
 test:
   imports:
