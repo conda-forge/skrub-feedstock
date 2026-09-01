@@ -1,5 +1,5 @@
 {% set name = "skrub" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skrub-{{ version }}.tar.gz
-  sha256: 30a3e8b062288e07be564a093c9ca94725ffb994f1bdd36d4da2fc5f410ab725
+  sha256: 39f58492f6889c5563a654478cd523771aaa8dab5a42ad2ce9f430efb3881f53
 
 build:
   noarch: python
