@@ -193,5 +193,6 @@ Feedstock Maintainers
 * [@Vincent-Maladiere](https://github.com/Vincent-Maladiere/)
 * [@glemaitre](https://github.com/glemaitre/)
 * [@jeromedockes](https://github.com/jeromedockes/)
+* [@lisaleemcb](https://github.com/lisaleemcb/)
 * [@rcap107](https://github.com/rcap107/)
 
