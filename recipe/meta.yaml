@@ -1,5 +1,5 @@
 {% set name = "skrub" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/skrub-{{ version }}.tar.gz
-  sha256: 97e986f56a82d9e071aff566c10099827fbaee4959451b61f9bdaf71c3ad6c6d
+  sha256: 7d660159aa1a83d9aa45de947c6cfc28b21966d59fbca301dfc6d2c3120af37f
 
 build:
   noarch: python
@@ -22,14 +22,16 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - scikit-learn >=1.5.2
     - numpy >=1.23.5
-    - scipy >=1.9.3
     - pandas >=1.5.3
+    - scikit-learn >=1.5.2
+    - scipy >=1.9.3
     - jinja2 >=3.1.2
-    - matplotlib-base >=3.4.3
+    - matplotlib-base >=3.6.1
     - requests >=2.27.1
     - pydot
+    - cloudpickle >=3.0
+    - joblib >=1.4.0
 
 test:
   imports:
